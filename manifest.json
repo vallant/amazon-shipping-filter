@@ -1,15 +1,30 @@
 {
 
   "manifest_version": 2,
-  "name": "Amazon Shopping Filter",
-  "version": "1.0",
+  "name": "Amazon Shipping Filter",
+  "version": "0.1",
 
   "description": "Filter Amazon Listings Not Shipping to You.",
 
   "content_scripts": [
     {
-      "matches": ["*://*.amazon.de/*"],
-      "js": ["amazon-shopping-filter.js"]
+      "matches": ["*://*.amazon.jp/*", 
+                  "*://*.amazon.com/*", 
+                  "*://*.amazon.in/*", 
+                  "*://*.amazon.ca/*",
+                  "*://*.amazon.it/*", 
+                  "*://*.amazon.es/*", 
+                  "*://*.amazon.de/*", 
+                  "*://*.amazon.co.uk/*", 
+                  "*://*.amazon.fr/*",
+                  "*://*.amazon.cn/*", 
+                  "*://*.amazon.nl/*", 
+                  "*://*.amazon.com.au/*", 
+                  "*://*.amazon.com.sg/*", 
+                  "*://*.amazon.com.mx/*",
+                  "*://*.amazon.com.br/*"
+                  ],
+      "js": ["amazon-shipping-filter.js"]
     }
   ]
 
